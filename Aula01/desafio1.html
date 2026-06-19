@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- TAG DO MEU SITE-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Esse é uma pagina modelo">
+    <meta name="keywords" content="sites,web desenvolvimento backend">
+    <meta name="author" content="Segura">
+    <title>EXERCÍCIO 04</title>
+
+    <!-- ICONE DO MEU SITE-->
+    <link rel="icon" href="https://i.pinimg.com/736x/d4/e0/bd/d4e0bde674fbb4d88ae339a2febe724b.jpg" type="image/x-icon">
+
+</head>
+
+<body>
+    <h1> integrando os recursos de interativaidade do JS  </h1>
+    <hr>
+    <script>
+        window.alert("Seja bem-vindo ao site");
+
+        let n1 = window.prompt("diga um valor");
+        console.log(n1)
+
+        let n2 = window.prompt("diga um  segundo valor");
+         console.log(n2)
+
+
+         let cont = window.prompt("digite + para soma e - para subtração ");
+         console.log(cont);
+         let resultado = 0
+
+
+        if (cont == "+") {            
+            resultado = (parseFloat(n1) + parseFloat(n2))            
+        }else{           
+            resultado = (parseFloat(n1) - parseFloat(n2))
+        }
+
+        window.alert(resultado)
+
+    </script>
+</body>
+
+</html>
