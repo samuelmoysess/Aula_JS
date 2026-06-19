@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <!-- Responsive Meta Tag -->
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <!-- Favicon  Tag -->
+    <link rel="icon" type="image/png" href="../favicon.png">
+    <title>DESAFIO 04 - JAVASCRIPT</title>
+    <meta name="description" content="Conteúdo das aulas de JS">
+    <meta name="keywords" content="sites, web, frontend">
+    <meta name="author" content="Gregorio Queiroz, gregorio@gregmaster.com.br, gregmasterbr@gmail.com">
+</head>
+<body>
+    <h1><mark>MANIPULANDO IMAGENS</mark> DO HTML ATRAVÉS DO JS</h1>
+    <hr>
+    <div>
+        <img width="100%" src="img/download.jpg" alt="Imagem do dona19" title="dona19">
+        <button onclick="trocar_imagem()">TROCAR IMAGEM</button>
+    </div>
+ 
+    <script>
+              
+        const tag_body = document.getElementsByTagName('body')[0];
+        tag_body.style.backgroundColor="aquamarine";
+        console.log(tag_body);
+        
+        const tag_div = document.getElementsByTagName('div')[0];
+        console.log(tag_div);
+        tag_div.style.backgroundColor = "antiquewhite"
+        tag_div.style.border = "1px";
+        tag_div.style.borderStyle="solid";
+        tag_div.style.borderColor="red";
+
+        function trocar_imagem(){
+            const tag_img = document.getElementsByTagName('img')[0];
+            if (tag_img.title=="Dona19"){
+                tag_img.src="img/download.jpg";
+                tag_img.title="Dona19"
+            }else{
+                tag_img.src="img/dona19.jpg";
+                tag_img.title="Dona19"
+            }
+            
+        }
+        
+
+    </script>
+
+    
+</body>
+<html>
