@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Exercicios De JS da Auçla 03 </h1>
+    <hr>
+    <ul>
+        <input type="button" onclick="triste();" value="Feliz"
+        <input type="button" onclick="feliz();" value="Triste"
+        <img src="img/emoji_triste.png" id="rosto" style="width: 350px;">
+        <script>
+            function triste (){
+                var tag_img = document.getElementsByTagName('img') [0]
+                console.log(tag_img)
+                tag_img.src="img/emoji_feliz.webp" ;
+            }
+
+            function feliz (){
+                var tag_img = document.getElementsByTagName('img') [0]
+                console.log(tag_img)
+                tag_img.src="img/emoji_feliz.webp" ;
+            }
+        </script>
+
+</body>
+</html>
